@@ -1,0 +1,56 @@
+
+
+body {background-color: orange;
+border: 5px solid black;}
+
+.flex-container { 
+display: flex;
+flex-direction: row; 
+justify-content: space-evenly;
+
+}
+
+.firstbox { 
+width: 33.3vw;
+height: 100vh;
+background-color: red; } 
+
+
+.secondbox { 
+width: 33.3vw;
+height: 100vh;
+background-color: blue; } 
+
+
+.thirdbox { 
+width: 33.3vw;
+height: 100vh;
+background-color: yellow; } 
+
+
+@media (min-width: 600px) {
+  
+  .flex-container { 
+display: flex;
+flex-direction: row-reverse; 
+justify-content: space-evenly;
+    
+    .thirdbox {background-color: purple; }   
+
+}
+  
+  
+}
+
+@media (max-width: 300px) {
+  
+  .flex-container { 
+display: flex;
+flex-direction: column-reverse; 
+justify-content: space-evenly;
+     
+
+}
+  
+  
+}
